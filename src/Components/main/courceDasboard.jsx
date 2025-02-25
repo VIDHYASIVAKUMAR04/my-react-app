@@ -323,7 +323,7 @@ const CoursueDashboard = () => {
             <div className="flex items-center">
               <img src='https://res.cloudinary.com/dxutqk10a/image/upload/v1739552712/profile19_ufjfc7.png' className="w-12 h-12 rounded-full border-2 border-purple-500 mr-3"/>
               <div>
-                <h3 className="font-semibold">I am Vidhya</h3>
+                <h3 className="font-semibold">V</h3>
                 <p className="text-xs text-gray-500">Continue Your Journey</p>
               </div>
             </div>
