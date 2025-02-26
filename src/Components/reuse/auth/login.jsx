@@ -210,7 +210,6 @@ const Login = () => {
             </button>
           </p>
         </div>
-        <Link to={"/dashboard"} className="underline text-blue-600">DashBoard</Link>
       </div>
     </div>
   );
