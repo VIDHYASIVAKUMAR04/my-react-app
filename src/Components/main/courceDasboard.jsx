@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { auth } from "../reuse/auth/firebase";
 import {signOut} from 'firebase/auth';
 import { Search, Bell, Mail, User, Settings, LogOut, Home, Inbox, BookOpen, CheckSquare, Users, ChevronRight, ChevronLeft, Edit, MoreVertical, Menu, X } from 'lucide-react';
-import Course1 from "../../assets/img1.jpg"
+import Course from "../../assets/img1.jpg"
 import { useNavigate } from 'react-router-dom';
 const CourseCard = ({ title, type, progress, instructor }) => (
   <div className="rounded-xl overflow-hidden shadow-md bg-white">
-    <div className="relative h-32  bg-gray-200">
-    <img src={Course1} style={{backgroundSize:"cover", backgroundPosition:"center"}} className="relative h-32 w-full bg-gray-200"/>
+    <div className="relative h-60 bg-gray-200">
+    <img src={Course} style={{backgroundSize:"cover", backgroundPosition:"center"}} className="relative h-full w-full bg-gray-200"/>
       <div className="absolute top-2 right-2 bg-white p-1 rounded-full">
         <MoreVertical size={16} />
       </div>
@@ -122,7 +122,7 @@ const CoursueDashboard = () => {
         </button>
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full bg-purple-600" />
-          <span className="font-bold text-lg text-purple-700">UNIQUE SOLUTIONS</span>
+          <span className="font-bold underline text-lg text-purple-700">UNIQUE SOLUTIONS</span>
         </div>
         <button onClick={toggleRightSidebar} className="p-2">
           <User size={24} />
@@ -134,7 +134,7 @@ const CoursueDashboard = () => {
           <div className="flex justify-between items-center mb-6">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-purple-600" />
-              <span className="font-bold text-lg text-purple-700">UNIQUE SOLUTIONS</span>
+              <span className="font-bold underline text-lg text-purple-700">UNIQUE SOLUTIONS</span>
             </div>
             <button className="md:hidden" onClick={toggleSidebar}>
               <X size={24} />
@@ -323,7 +323,7 @@ const CoursueDashboard = () => {
             <div className="flex items-center">
               <img src='https://res.cloudinary.com/dxutqk10a/image/upload/v1739552712/profile19_ufjfc7.png' className="w-12 h-12 rounded-full border-2 border-purple-500 mr-3"/>
               <div>
-                <h3 className="font-semibold">V</h3>
+                <h3 className="font-semibold">VIDHYA S</h3>
                 <p className="text-xs text-gray-500">Continue Your Journey</p>
               </div>
             </div>
